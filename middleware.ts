@@ -19,5 +19,10 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/auth/:path*"],
+  matcher: [
+    // Match admin routes
+    "/admin/:path*",
+    // Match auth routes
+    "/auth/:path*",
+  ],
 };
